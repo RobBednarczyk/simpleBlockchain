@@ -118,49 +118,4 @@ class Blockchain{
         })
     }
 
-    // validateChain(){
-    //   let errorLog = [];
-    //   level.getBlockHeight().then((height) => {
-    //       for (var i = 0; i < height; i++) {
-    //         // validate block
-    //         this.validateBlock(i).then((valid) => {
-    //             if (!valid) {
-    //                 errorLog.push(i);
-    //             }
-    //         });
-    //         // if (!this.validateBlock(i)) {
-    //         //     errorLog.push(i);
-    //         // }
-    //
-    //         // compare blocks hash link
-    //         level.getLevelDBdata(i).then((block) => {
-    //             var blockHash = block.hash;
-    //             if (i !== (height - 1)) {
-    //                 level.getLevelDBdata(i+1).then((block) => {
-    //                     var previousHash = block.previousBlockHash;
-    //                     if (blockHash!==previousHash) {
-    //                       errorLog.push(i);
-    //                     }
-    //                 });
-    //             }
-    //         });
-    //         // let blockHash = this.getBlock(i).hash;
-    //         // let previousHash = this.getBlock(i+1).previousBlockHash;
-    //         // if (blockHash!==previousHash) {
-    //         //   errorLog.push(i);
-    //         // }
-    //       }
-    //       if (errorLog.length>0) {
-    //         console.log('Block errors = ' + errorLog.length);
-    //         console.log('Blocks: '+errorLog);
-    //       } else {
-    //         console.log('No errors detected');
-    //       }
-    //   })
-    //
-    // }
 }
-
-// testing
-// let blockchain = new Blockchain();
-// console.log(blockchain);
